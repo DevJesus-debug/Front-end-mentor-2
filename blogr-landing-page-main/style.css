@@ -452,7 +452,7 @@ header main .btn-cont .white-btn:hover{
 
    .footer-cont .footer-ul li:hover{
     text-decoration: underline;
-    font-weight: bold;
+    transform: scale(1.05);
 }
 
 
