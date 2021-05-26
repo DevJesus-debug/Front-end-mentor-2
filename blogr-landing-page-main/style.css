@@ -83,15 +83,19 @@ text-decoration: underline 2px;
  }
 
 
-
-
-
 .drop-down-list .list-cont ul li:hover{
     text-decoration: underline;
     font-weight: bold;
 }
 
+/*MENU JAVASCRIPT*******/
+
 .drop-down-list .list-cont ul{
+    display: none;
+ } 
+
+
+.drop-down-list .list-cont ul.close{
     display: none;
  } 
 
@@ -472,7 +476,7 @@ header main .btn-cont .white-btn:hover{
      }
 
      header{
-         height: 67.5vh;    
+         height: auto;    
          background-position: center;
          background-size: 350%;
          background-position-x: 35%;
@@ -527,11 +531,11 @@ header main .btn-cont .white-btn:hover{
         align-items: center;
     }
 
-    .logo-list .drop-down-list .list-cont .drop{
+    .logo-list .drop-down-list .list-cont .drop.close{
        width: 100%;
     }
 
-    .drop-down-list .list-cont ul.clicked{
+    .drop-down-list .list-cont .drop.clicked{
         position: relative;
         background: rgb(236, 232, 232);
         text-align: center;
@@ -545,12 +549,14 @@ header main .btn-cont .white-btn:hover{
         align-items: center;
     }
 
+      /*Arrow Javascript*/
     .logo-list .drop-down-list h4 .red-arrow{
         display: block;
         width: 10px;
         height: 10px;
         margin-left: 5px;
      }
+
 
      .logo-list .drop-down-list h4 .red-arrow.arrow2{
         transform: rotate(180deg);
@@ -613,6 +619,7 @@ header main .btn-cont .white-btn:hover{
 main{
     text-align: center;
     margin: 0 22px;
+    margin-bottom: 115px;
 }
 
 header  main h1{
@@ -695,7 +702,7 @@ main .btn-cont{
    padding: 0;
    display: flex;
    flex-direction: column;
-   height: 90vh;
+   height: auto;
    margin-top: 70px;
 }
 
@@ -720,7 +727,7 @@ main .btn-cont{
 
 .container-2 .cont-4 p{
   padding: var(--mobile-padding);
-    
+  margin-bottom: 115px;
 }
 
 .container-2 .cont-3 .img-1{
